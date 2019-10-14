@@ -1,16 +1,40 @@
 ## Command-line interface to java2scala.com
 
-Despite it being abandoned and not develeped anymore, the http://java2scala.com
-is still up and - surprisingly enough - still works pretty well. It's possible
-to build and run the software behind it locally, but I found it way too tedious
-for converting a dozen files.
+### What
 
-That being said, a dozen or two Java files are still a lot of clicking to
-convert, and I'm allergic to clicking, so I wrote a little script for converting
-files from the command-line.
+Command-line utility for converting source code in Java to Scala, via
+http://javatoscala.com
+
+
+### How
+
+Fastest way:
+1. Download a pre-built release from: ???
+2. Extract its contents
+3. Link (do not copy) `./java2scala/bin/java2scala` somewhere on your `PATH`
+4. Run with `java2scala -d <dirname>`
+
+
+### Why
+
+Despite it being **abandoned and not develeped anymore**, the *java2scala.com*[^2]
+is still up and - surprisingly enough - still works pretty well.
+
+It's possible to build and run the software behind it locally[^1], but with the
+last commit being in 2015 I found it really hard to make it work on Scala 2.13,
+which is why I turned to the online solution.
+
+I don't like manually copying and pasting dozens of files, so I wrote this
+script, which searches given directory for Java files and converts all of them
+to Scala files. Scala files are saved next to Java ones, with only extension
+changed.
 
 The script is written in Scala itself and I'm surprised at how short and clean
 the implementation turned out, especially given the "static typing" and "on JVM"
 properties of the language.
 
 The resulting distribution is still 27Mb though...
+
+[^1]: https://github.com/scalagen/scalagen
+
+[^2]: https://github.com/koofr/javatoscala
