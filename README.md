@@ -8,10 +8,10 @@ http://javatoscala.com
 
 ### How
 
-Fastest way:
-1. Download a pre-built release from: ???
-2. Extract its contents
-3. Link (do not copy) `./java2scala/bin/java2scala` somewhere on your `PATH`
+The fastest way:
+1. Download a pre-built release from: https://github.com/piotrklibert/java2scala/releases/download/0.0.1/java2scala-converter.zip
+2. Unzip it
+3. Make sure the unzipped `./java2scala/bin/` directory is on your `PATH`
 4. Run with `java2scala -d <dirname>`
 
 
